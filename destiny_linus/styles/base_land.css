@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 480px;
+    margin-inline: auto;
+}
+
+.navigation {
+    background-color: hsla(240, 6%, 95%, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navigation .container {
+    display: grid;
+    grid-template-areas: 
+        "logo home";
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.navigation img {
+    grid-area: logo;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.child {
+    background-color: hsl(240, 6%, 95%);
+}
+
+.container {
+    padding: 4rem 2rem;
+    margin-top: .5rem;
+}
+
+h1, h2, h3 {
+    color: hsl(240, 4%, 8%);
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    padding-bottom: 2rem;
+}
+
+.wayFinding {
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: hsl(240, 4%, 8%);
+}
+
+.section-content, .section-header, ul {
+    padding-inline: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-bottom: 2rem;
+    color: hsl(240, 3%, 11%);
+}
+
+li {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: hsl(240, 3%, 11%);
+}
+
+.p {
+    padding-block: 2rem;
+}
